@@ -10,6 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
+import os
+
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -39,7 +41,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
 
-    'menu_items.apps.MenuItemsConfig'
+    # 3rd party
+    'rest_framework',
+
+    #local
+    'api.apps.ApiConfig',
+    'frontend.apps.FrontendConfig',
+    'menu_items.apps.MenuItemsConfig',
 ]
 
 MIDDLEWARE = [
@@ -121,3 +129,18 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'frontend/react-restaurant-app/build/static'),
+)
+
+REACT_APP_DIR = os.path.join(BASE_DIR, 'frontend/react-restaurant-app')
+
+#Django REST Framework permissions
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',
+    ]
+}

@@ -1,0 +1,121 @@
+body {
+  background-image: url('https://retaildesignblog.net/wp-content/uploads/2016/04/Jasmine-Thai-restaurant-by-Relativity-Architects-Woodland-Hills-California.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu-button{
+  font-size: 20px;
+  margin-bottom: 0px;
+  color:#fff;
+}
+
+
+ #hide{
+  display: none
+}
+
+#not-hide{
+ display: block
+}
+
+.home-info{
+  color: #fff;
+}
+
+.menu {
+  background-color: gray;
+}
+
+.checkout{
+  display: flex;
+  background-color: rgba(0,0,0,.7);
+  color: #fff;
+  justify-content: space-between;
+}
+
+.link-button{
+  text-decoration: none;
+}
+
+.foodImg{
+  padding-left: 5px;
+  width: 30%;
+  height: 120px;
+}
+
+.webName{
+  font-size: 20px;
+  margin-bottom: 0px;
+  color:#fff;
+}
+
+.items {
+  background-color: rgba(0,0,0,.7);
+  color: #fff;
+  border-bottom: solid #fff 1px;
+}
+
+.item-desc{
+  display: inline;
+  position: absolute;
+  margin-left: 10px;
+}
+
+.item-desc p{
+  margin-bottom: 0px;
+}
+
+.subtotal{
+  display: inline;
+  margin: 10px 0px;
+  margin-left: 20px;
+}
+
+.order-title{
+  background-color: rgba(0,0,0,.7);
+  color: #fff;
+}
+
+.order-item{
+  background-color: rgba(0,0,0,.7);
+  color: #fff;
+  border-bottom: solid #fff 1px;
+}
+
+.order-desc{
+  display: flex;
+  justify-content: space-between;
+}
+
+#instructions{
+  background-color: rgba(0,0,0,.7);
+  color: #fff;
+}
+
+.save{
+  display:block;
+  color: #fff;
+}
+
+.add-to-order{
+  color: #fff;
+  display:block;
+}
+
+.submit-order{
+  color: #fff;
+}
+
+.delete{
+  color:  #fff;
+  font-size: 20px;
+}
+
+.order-name{
+  font-size: 18px;
+}
+
+.hover-change: hover {
+  background-color: blue;
+}
