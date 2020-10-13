@@ -6,7 +6,7 @@ class FoodItem extends React.Component{
     this.state = {
       name: '',
       price:'',
-      descripion: '',
+      description: '',
       url:'',
     }
   this.handleClick = this.handleClick.bind(this);
@@ -20,7 +20,7 @@ class FoodItem extends React.Component{
      <img className="foodImg"src={item.url} alt='#'/>
      <section className='item-desc'>
        <h4>{item.name}</h4>
-       <p>{item.descripion}</p>
+       <p>{item.description}</p>
      </section>
      <button className="btn add-to-order"type="button" onClick={() => this.handleClick(item)}>Add to order ${item.price}</button></li>);
     return(
